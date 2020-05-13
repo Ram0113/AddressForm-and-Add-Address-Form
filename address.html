@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="a-js a-ember">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>address</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="a-section">
+        <div class="a-section a-spacing-medium a-text-left address-narrow-container-desktop">
+            <div class="a-section a-spacing-medium">
+                <div class="a-subheader a-breadcrumb a-spacing-small">
+                    <ul class="a-nostyle a-horizontal">
+                        <li><span class="a-list-item">
+                                <a class="a-spacing-large a-link-normal" href="/gp/css/homepage.html?ref=ya_address_book_add_to_your_account_breadcrumb"><span> Your Account </span></a> 
+                            </span>
+                        </li>
+                        <li class="a-breadcrumb-divider">›</li>
+                        <li><span class="a-list-item">
+                                <a class="a-spacing-large a-link-normal" href="/a/addresses?ref=ya_address_book_add_to_address_book_breadcrumb"><span> Your Addresses </span></a>
+                            </span>
+                        </li>
+                        <li class="a-breadcrumb-divider">›</li>
+                        <li> <span class="a-list-item">
+                            <span class="a-color-state"> New Address </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="a-section">
+                    <input type="hidden" id="address-ui-widgets-reload-url" value="/a/addresses/reload-add-form">
+                    <h2>Add a new address</h2>
+                    <div class="a-section a-spacing-none a-spacing-top-small">
+                        <span class="a-text-bold">Or pick up your packages at your convenience from our self-service locations.  To add an Amazon Pickup Point, click <a href="#"> here</a>.</span>
+                    </div>
+                    <form id="address-ui-address-form" action="/a/addresses/add?ref=ya_address_book_add_post" method="POST">
+                        <input type="hidden" name="csrfToken" value="8Ddl8K2MIyz1tUIaj2BYZxOQZkJoQj3D">
+                        <input type="hidden" name="addressID" id="addressID">
+                        <span id="address-ui-widget-content">
+                            <div id="address-ui-widgets-enterAddressFormContainer" class="a-section">
+                                <div class="a-row">
+                                    <div class="a-input-text-group a-spacing-medium a-spacing-top-medium">
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-countryCode" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap">
+                                                    <span class="a-text-bold">Country/Region</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-large adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <span class="a-dropdown-container">
+                                                <select name="address-ui-widgets-countryCode" autocomplete="off" id="address-ui-widgets-countryCode-dropdown-nativeId" tabindex="0" class="a-native-dropdown a-spacing-none">
+                                                    <option value="AF">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas, The</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BQ">Bonaire, Saint Eustatius and Saba</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, Democratic Republic of</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CW">Curaçao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica, Commonwealth of</option><option value="DO">Dominican Republic</option><option value="TL">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia, The</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and the McDonald Islands</option><option value="VA">Holy See</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN" selected="">India</option><option value="ID">Indonesia</option><option value="IQ">Iraq</option><option value="IE">Ireland, Republic of</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast (Côte D'ivoire)</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KR">Korea, Republic of</option><option value="XK">Kosovo</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao, People's Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia, The Former Yugoslav Republic of</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States of</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territories</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint Barthelemy</option><option value="SH">Saint Helena, Ascension and Tristan da Cunha</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania, United Republic of</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, US</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>
+                                                </select>
+                                                <span tabindex="-1" id="address-ui-widgets-countryCode" data-a-class="address-ui-widgets-desktop-form-field-full-width" class="a-button a-button-dropdown a-spacing-none address-ui-widgets-desktop-form-field-full-width" aria-hidden="true" style="min-width: 0.412245%;">
+                                                    <span class="a-button-inner">
+                                                        <span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true">
+                                                            <span class="a-dropdown-prompt">India</span>
+                                                        </span>
+                                                        <i class="a-icon a-icon-dropdown"></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                                                <div id="address-ui-widgets-addr-form-switch-alert-box" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                                                    <div class="a-box-inner a-alert-container">
+                                                        <i class="a-icon a-icon-alert"></i>
+                                                        <div class="a-alert-content">
+                                                            <div class="a-section">Unable to change country, please try again</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-enterAddressFullName" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">Full name</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="50" id="address-ui-widgets-enterAddressFullName" name="address-ui-widgets-enterAddressFullName" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-enterAddressPhoneNumber" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">Mobile number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="10" id="address-ui-widgets-enterAddressPhoneNumber" placeholder="10-digit mobile number without prefixes" name="address-ui-widgets-enterAddressPhoneNumber" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                            <div class="a-section a-spacing-none a-spacing-top-micro"><span class="a-size-mini">May be used to assist delivery</span>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-enterAddressPostalCode" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">PIN code</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="6" id="address-ui-widgets-enterAddressPostalCode" placeholder="6 digits [0-9] PIN code" name="address-ui-widgets-enterAddressPostalCode" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-enterAddressLine1" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">Street number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-small adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="60" id="address-ui-widgets-enterAddressLine1" placeholder="Flat / House No. / Floor / Building" name="address-ui-widgets-enterAddressLine1" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label"></div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="60" id="address-ui-widgets-enterAddressLine2" placeholder="Colony / Street / Locality" name="address-ui-widgets-enterAddressLine2" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-landmark" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">Landmark</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="60" id="address-ui-widgets-landmark" placeholder="E.g. Near AIIMS Flyover, Behind Regal Cinema, etc." name="address-ui-widgets-landmark" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-enterAddressCity" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">City</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <input type="text" maxlength="50" id="address-ui-widgets-enterAddressCity" name="address-ui-widgets-enterAddressCity" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input">
+                                            <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                                                <div id="address-ui-widgets-inline-city-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                                                    <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                                                        <div class="a-alert-content">
+                                                            <div class="a-section">Please enter a city name.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                            <div class="a-section a-spacing-none aok-inline-block">
+                                                <label for="address-ui-widgets-enterAddressStateOrRegion" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">State / Province / Region</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                            <span class="a-dropdown-container">
+                                                <select name="address-ui-widgets-enterAddressStateOrRegion" autocomplete="off" id="address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId" tabindex="0" class="a-native-dropdown a-spacing-none">
+                                                    <option class="a-prompt" value="">Select state</option><option value="ANDAMAN &amp; NICOBAR ISLANDS">ANDAMAN &amp; NICOBAR ISLANDS</option><option value="ANDHRA PRADESH">ANDHRA PRADESH</option><option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option><option value="ASSAM">ASSAM</option><option value="BIHAR">BIHAR</option><option value="CHANDIGARH">CHANDIGARH</option><option value="CHHATTISGARH">CHHATTISGARH</option><option value="DADRA &amp; NAGAR HAVELI">DADRA &amp; NAGAR HAVELI</option><option value="DAMAN &amp; DIU">DAMAN &amp; DIU</option><option value="DELHI">DELHI</option><option value="GOA">GOA</option><option value="GUJARAT">GUJARAT</option><option value="HARYANA">HARYANA</option><option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option><option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option><option value="JHARKHAND">JHARKHAND</option><option value="KARNATAKA">KARNATAKA</option><option value="KERALA">KERALA</option><option value="LAKSHADWEEP">LAKSHADWEEP</option><option value="MADHYA PRADESH">MADHYA PRADESH</option><option value="MAHARASHTRA">MAHARASHTRA</option><option value="MANIPUR">MANIPUR</option><option value="MEGHALAYA">MEGHALAYA</option><option value="MIZORAM">MIZORAM</option><option value="NAGALAND">NAGALAND</option><option value="ODISHA">ODISHA</option><option value="PUDUCHERRY">PUDUCHERRY</option><option value="PUNJAB">PUNJAB</option><option value="RAJASTHAN">RAJASTHAN</option><option value="SIKKIM">SIKKIM</option><option value="TAMIL NADU">TAMIL NADU</option><option value="TELANGANA">TELANGANA</option><option value="TRIPURA">TRIPURA</option><option value="UTTAR PRADESH">UTTAR PRADESH</option><option value="UTTARAKHAND">UTTARAKHAND</option><option value="WEST BENGAL">WEST BENGAL</option>
+                                                </select>
+                                                <span tabindex="-1" id="address-ui-widgets-enterAddressStateOrRegion" data-a-class="address-ui-widgets-desktop-form-field-full-width" class="a-button a-button-dropdown a-spacing-none address-ui-widgets-desktop-form-field-full-width" aria-hidden="true" style="min-width: 0%;">
+                                                    <span class="a-button-inner">
+                                                        <span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true">
+                                                            <span class="a-dropdown-prompt">Select state</span>
+                                                        </span>
+                                                        <i class="a-icon a-icon-dropdown"></i>
+	                                                </span>
+	                                            </span>
+	                                        </span>
+                                        </div>
+                                        <div class="a-section">
+                                            <div class="a-section a-spacing-base">
+                                                <h3 id="address-ui-widgets-addr-details-main-heading" class="aok-float-left a-text-bold">Add delivery instructions</h3><span class="a-letter-space"></span>
+                                            </div>
+                                            <div id="address-ui-widgets-addr-details-text" class="a-section a-spacing-base">Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned.<span class="a-letter-space"></span>
+                                            </div>
+                                            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container address-ui-widgets-desktop-form-label">
+                                                <div class="a-section a-spacing-none aok-inline-block">
+                                                    <label for="address-ui-widgets-addr-details-address-type-and-business-hours" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-text-bold">Select your preference</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-desktop-form-field">
+                                                <span class="a-dropdown-container">
+                                                        <select name="address-ui-widgets-addr-details-address-type-and-business-hours" autocomplete="off" tabindex="0" class="a-native-dropdown"><option value="OTH" selected="">Select your preference</option><option value="RES">Home (7 a.m. - 9 p.m., All days)</option><option value="COM">Office/Commercial (10 AM - 6 PM delivery)</option></select>
+                                                        <span tabindex="-1" id="address-ui-widgets-addr-details-address-type-and-business-hours" data-a-class="address-ui-widgets-desktop-form-field-full-width" class="a-button a-button-dropdown address-ui-widgets-desktop-form-field-full-width" aria-hidden="true" style="min-width: 0%;">
+                                                            <span class="a-button-inner">
+                                                                <span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true"><span class="a-dropdown-prompt">Select your preference</span>
+                                                            </span>
+                                                            <i class="a-icon a-icon-dropdown"></i>
+                                                        </span>
+                                                </span>
+                                                </span>
+                                                <script type="a-state" data-a-state="{&quot;key&quot;:&quot;addressTypeDropdownDefault&quot;}">
+                                                    {"addressTypeDropdownDefaultValue":"OTH"}
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="address-ui-widgets-previous-address-form-state-token" value="#">
+                                
+                                <span id="address-ui-widgets-form-submit-button" class="a-button a-spacing-top-large a-button-primary">
+                                    <span class="a-button-inner">
+                                        <input class="a-button-input" type="submit" aria-labelledby="address-ui-widgets-form-submit-button-announce">
+                                        <span id="address-ui-widgets-form-submit-button-announce" class="a-button-text" aria-hidden="true">Add address</span>
+                                    </span>
+                                </span>
+                                <input type="hidden" name="address-ui-widgets-addressFormButtonText" value="save">
+                                <input type="hidden" name="address-ui-widgets-addressFormHideHeading" value="true">
+                                <input type="hidden" name="address-ui-widgets-addressFormHideSubmitButton" value="false">
+                                <input type="hidden" name="address-ui-widgets-enableImportContact" value="false">
+                                <input type="hidden" name="address-ui-widgets-enableAddressDetails" value="true">
+                                <input type="hidden" name="address-ui-widgets-returnLegacyAddressID" value="false">
+                                <input type="hidden" name="address-ui-widgets-enableEmailAddress" value="false">
+                                <input type="hidden" name="address-ui-widgets-enableAddressTips" value="true">
+                                <input type="hidden" name="address-ui-widgets-locale">
+                                <script type="a-state" data-a-state="{&quot;key&quot;:&quot;identity-address-ux-ajax-data&quot;}">{"identity-address-ux-ajax-auth-token":"eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.acK0WINhYu9x1H076_G_cyHXj-2JL0S-Ul7gJSN6jY8oWwkOAhWZhg.SRCNBsJprt_Synel.qv4VqqUtZfnGOaMtrrmxkfmbHGql5s4i4w8KtO3yEsXbmmo5NpQCJMQWigb2ps21gphwlCp7mg_U4Dxn_PYd_jedj1zZB9L7Pr2TQK3McRPCKe4BSEOugScBr8VKxTcHeS0BRLOOpCbGwsQbzwQfH7svfL4FrSqDuwjzrn3t4G8lZqsOhKmKBVZpPtlQUdW_voUbNz6SNuJ8FaGnpN2LXQ1HnZYRDI0C13lLsC2N_Ea9UnOdP2QvgzlRyoZdbbn-hI5C1lw-AUd2fpElk5qi0DkNIQRDULa5riMS9kUUpJu08QdO1kSp6_2MRSCyIWgOThrbqADgs_lWW106zVTG1X3Lf0hWWwQx3GFrPzJ8MT2_eHm_HhjsWgyqVDYmaOCb-z5hU42mZnkvnOV4hgBP1Hel2fYDtzP1JfOy6mwlITaptugVhh5ijK-TIDEPmr1t2xUHkQElU2606uCpvGH9PJrW5xtG22DD8RNZ8hFLxnTJj9xIG0RbkeH_QRdK0UGM5j2a0ctthu52_LhOSg_FGUqtk_5CJcFFgaKageJAzv8IIrt-LKmhcwdc37u_yheiQGw0-M0O9uJ00TDPnjvuXDGdRPlM-vFfQdP6u6mYSesoi1GAnDqOiaxEEA9kbSFMQmhiCIDlOPqgJCQsyMLeY1ElA4M9MneLZJxib3E507097_DiS-1LoI_4gwauW967iv7O217zqrSWeskqEr4WNGmnPRAM5RrYRGDAJQ6EYKoCKPnMdbhv-pWgoVZ28513fVM1nG18ka5BDkRbjt54szyJPhWmWA.pY8zIhOIzMobHPpqcbHCuQ","identity-address-ux-ajax-domain":"www.amazon.in"}</script>
+                                <script type="a-state" data-a-state="{&quot;key&quot;:&quot;address-ui-widgets-from-view-state&quot;}">{"client":"your-account-address-book","isEnabled":true}</script>
+                            </div>
+                            <script > P.when('A', 'a-dropdown', 'ready').execute(function (A, dropdown) {
+                                var $ = A.$;
+                                var POSTAL_CODE_LENGTH = 6;
+                                var stateDropdown = dropdown.getSelect("#address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId");
+                                var cityTextInput = $("#address-ui-widgets-enterAddressCity");
+                                var addressLineOneTextInput = $("#address-ui-widgets-enterAddressLine1");
+                                A.state.parse();
+                                var ajaxToken = A.state('identity-address-ux-ajax-data')['identity-address-ux-ajax-auth-token'];
+                                var ajaxDomain = A.state('identity-address-ux-ajax-data')['identity-address-ux-ajax-domain'];
+                                var client = A.state('address-ui-widgets-from-view-state')['client'];
+                                var ajaxUrlPrefix = ""
+                                if (client && (client === 'your-account-address-book' || client === 'checkout')) {
+                                    ajaxUrlPrefix = window.location.origin
+                                } else {
+                                    ajaxUrlPrefix = (ajaxDomain) ? window.location.protocol + "//" + ajaxDomain : "";
+                                }
+                            
+                                function incrementCounter(counterName) {
+                                    if (window.ue && window.ue.count) {
+                                        window.ue.count(counterName, (window.ue.count(counterName) || 0) + 1);
+                                    }
+                                }
+                            
+                                function reloadIfRequiresAuth(resultCallback) {
+                                    return function (result) {
+                                        if (true === result.requiresAuth) {
+                                            window.location.reload(true);
+                                        } else {
+                                            resultCallback(result);
+                                        }
+                                    };
+                                }
+                            
+                                function handleAutopopulationResult(result) {
+                                    if (result !== undefined && result !== null) {
+                                        var data = result.data;
+                                    }
+                                    if (data !== undefined && data !== null) {
+                                        if (data.isAjaxError === "false") {
+                                            var stateValue = data.stateOrRegion;
+                                            var city = data.city;
+                                            var statePopulationSuccess = false;
+                                            if (stateValue && stateDropdown) {
+                                                stateDropdown.val(stateValue);
+                                                statePopulationSuccess = true;
+                                            }
+                                            if (city && cityTextInput) {
+                                                cityTextInput.val(city);
+                                                addressLineOneTextInput.focus();
+                                                if (statePopulationSuccess === true) {
+                                                    incrementCounter("INAutopopulationSuccess")
+                                                }
+                                            }
+                                        } else {
+                                            incrementCounter("INAutopopulationFailure");
+                                        }
+                                    } else {
+                                        incrementCounter("INAutopopulationFailure");
+                                    }
+                                }
+                                var autopopulateBasedOnPostalCode = function () {
+                                    var postalCode = $("#address-ui-widgets-enterAddressPostalCode").val();
+                                    if (postalCode.length === POSTAL_CODE_LENGTH) {
+                                        var request = {
+                                            operation: "IndiaAutopopulation",
+                                            data: {
+                                                "address-ui-widgets-enterAddressPostalCode": postalCode
+                                            },
+                                            ajaxToken: ajaxToken
+                                        }
+                                        A.post(ajaxUrlPrefix + "/a/addresses/ajax/widgets", {
+                                            contextType: "application/json",
+                                            accepts: "text/html;charset=UTF-8",
+                                            withCredentials: true,
+                                            params: {
+                                                data: JSON.stringify(request)
+                                            },
+                                            success: reloadIfRequiresAuth(handleAutopopulationResult),
+                                            error: incrementCounter("INAutopopulationFailure")
+                                        });
+                                    }
+                                }
+                                $("#address-ui-widgets-enterAddressPostalCode").bind("input", autopopulateBasedOnPostalCode);
+                            });
+                            P.when('A', 'a-dropdown', 'a-alert', 'ready').execute(function (A, dropdown, auiAlert) {
+                                var $ = A.$;
+                                var countryDropdown = dropdown.getSelect('[name="address-ui-widgets-countryCode"]');
+                                A.state.parse();
+                                var ajaxToken = A.state('identity-address-ux-ajax-data')['identity-address-ux-ajax-auth-token'];
+                                var ajaxDomain = A.state('identity-address-ux-ajax-data')['identity-address-ux-ajax-domain'];
+                                var client = A.state('address-ui-widgets-from-view-state')['client'];
+                                var ajaxUrlPrefix = ""
+                                if (client && (client === 'your-account-address-book' || client === 'checkout')) {
+                                    ajaxUrlPrefix = window.location.origin
+                                } else {
+                                    ajaxUrlPrefix = (ajaxDomain) ? window.location.protocol + "//" + ajaxDomain : "";
+                                }
+                            
+                                function incrementCounter(counterName) {
+                                    if (window.ue && window.ue.count) {
+                                        window.ue.count(counterName, (window.ue.count(counterName) || 0) + 1);
+                                    }
+                                }
+                            
+                                function setErrorState(countryDropdownValue) {
+                                    auiAlert("#address-ui-widgets-addr-form-switch-alert-box").show();
+                                    incrementCounter("AddressFormReloadFailure");
+                                    dropdown.getSelect('[name="address-ui-widgets-countryCode"]').val(countryDropdownValue);
+                                }
+                            
+                                function getDropdownDefaultValue(modelName, key) {
+                                    var defaultValue = 'OTH';
+                                    var defaultValueMap = A.state(modelName);
+                                    if (defaultValueMap) {
+                                        var defaultValueFromMap = defaultValueMap[key];
+                                        if (defaultValueFromMap) {
+                                            defaultValue = defaultValueFromMap;
+                                        }
+                                    }
+                                    return defaultValue;
+                                }
+                            
+                                function getBusinessHoursDropdownDefaultValue() {
+                                    return getDropdownDefaultValue('businessHoursDropdownDefault', 'businessHoursDropdownDefaultValue');
+                                }
+                            
+                                function getAddressTypeDropdownDefaultValue() {
+                                    return getDropdownDefaultValue('addressTypeDropdownDefault', 'addressTypeDropdownDefaultValue');
+                                }
+                                //Used to prevent blank dropdown on ajax form reload on country switch
+                                function resetDropdownOnAjaxRequest() {
+                                    if (dropdown.getSelect('[name="address-ui-widgets-addr-details-address-type-and-business-hours"]') != null) {
+                                        dropdown.getSelect('[name="address-ui-widgets-addr-details-address-type-and-business-hours"]').val(getAddressTypeDropdownDefaultValue());
+                                    }
+                                    if (dropdown.getSelect('[name="address-ui-widgets-addr-details-business-hours"]') != null) {
+                                        dropdown.getSelect('[name="address-ui-widgets-addr-details-business-hours"]').val(getBusinessHoursDropdownDefaultValue());
+                                    }
+                                }
+                                /*
+                                 This JS is emitted each time a new address form is rendered. The country dropdown event handler
+                                 gets registered the first time the address and this check makes sure
+                                 that this happens just once.
+                                 */
+                                if (A.isListening('a:dropdown:selected:address-ui-widgets-countryCode')) {
+                                    return;
+                                }
+                                if (countryDropdown !== undefined && countryDropdown !== null) {
+                                    var selectedCountry = countryDropdown.val();
+                                    A.on('a:dropdown:selected:address-ui-widgets-countryCode', function (data) {
+                                        incrementCounter("AddressFormCountryDropdownChange");
+                                        var country = data.value;
+                                        // TODO Replace options with JWT
+                                        var request = {
+                                            operation: "AddressFormCountrySwitch",
+                                            data: {
+                                                "address-ui-widgets-countryCode": country,
+                                                "address-ui-widgets-addressFormButtonText": $("input[name='address-ui-widgets-addressFormButtonText']").val(),
+                                                "address-ui-widgets-addressFormHideHeading": $("input[name='address-ui-widgets-addressFormHideHeading']").val(),
+                                                "address-ui-widgets-enableImportContact": $("input[name='address-ui-widgets-enableImportContact']").val(),
+                                                "previous-value-address-ui-widgets-countryCode": $("input[name='previous-value-address-ui-widgets-countryCode']").val(),
+                                                "address-ui-widgets-enableAddressDetails": $("input[name='address-ui-widgets-enableAddressDetails']").val(),
+                                                "address-ui-widgets-enableEmailAddress": $("input[name='address-ui-widgets-enableEmailAddress']").val(),
+                                                "address-ui-widgets-enableAddressTips": $("input[name='address-ui-widgets-enableAddressTips']").val(),
+                                                "address-ui-widgets-returnLegacyAddressID": $("input[name='address-ui-widgets-returnLegacyAddressID']").val(),
+                                                "address-ui-widgets-addressFormHideSubmitButton": $("input[name='address-ui-widgets-addressFormHideSubmitButton']").val(),
+                                                "address-ui-widgets-previous-address-form-state": $("input[name='address-ui-widgets-previous-address-form-state']").val(),
+                                                "address-ui-widgets-previous-address-form-state-token": $("input[name='address-ui-widgets-previous-address-form-state-token").val()
+                                            },
+                                            ajaxToken: ajaxToken
+                                        }
+                                        var originalAddressId = $("input[name='address-ui-widgets-original-address-id']");
+                                        if (originalAddressId !== undefined && originalAddressId !== null) {
+                                            request.data["address-ui-widgets-original-address-id"] = originalAddressId.val();
+                                        }
+                                        A.post(ajaxUrlPrefix + "/a/addresses/ajax/widgets", {
+                                            contextType: "application/json",
+                                            accepts: "text/html;charset=UTF-8",
+                                            withCredentials: true,
+                                            params: {
+                                                data: JSON.stringify(request)
+                                            },
+                                            success: function (result) {
+                                                if (result.requiresAuth === true) {
+                                                    window.location.reload(true);
+                                                } else {
+                                                    if (result !== undefined && result !== null && result.data !== undefined && result.data !== null) {
+                                                        var addressData = result.data;
+                                                        if (addressData.isAjaxError === "false") {
+                                                            $('#address-ui-widgets-enterAddressFormContainer').replaceWith(addressData.addressFormHTML);
+                                                            auiAlert("#address-ui-widgets-addr-form-switch-alert-box").hide();
+                                                            resetDropdownOnAjaxRequest();
+                                                            selectedCountry = country;
+                                                        } else {
+                                                            setErrorState(selectedCountry);
+                                                        }
+                                                    } else {
+                                                        setErrorState(selectedCountry);
+                                                    }
+                                                }
+                                            },
+                                            error: function () {
+                                                setErrorState(selectedCountry);
+                                            }
+                                        });
+                                    });
+                                }
+                            });
+                            P.when("A", "a-checkbox", "a-alert", "ready").execute(function (A, checkbox, alert) {
+                                var $ = A.$;
+                                var satOptOutAlertMsg = alert('#address-ui-widgets-addr-details-business-hours-opt-out-sat-alert');
+                                var sunOptOutAlertMsg = alert('#address-ui-widgets-addr-details-business-hours-opt-out-sun-alert');
+                                var weekendOptOutAlertMsg = alert('#address-ui-widgets-addr-details-business-hours-opt-out-weekend-alert');
+                            
+                                function handleCheckboxToggleEvent(toggledCheckBox, toggledCheckBoxMsg, otherCheckBox, otherCheckBoxMsg, weekendOptOutMsg) {
+                                    var argsInvalid = false;
+                                    A.each(arguments, function (element) {
+                                        if (isNull(element)) {
+                                            argsInvalid = true;
+                                        }
+                                    });
+                                    if (argsInvalid) return;
+                                    if (toggledCheckBox.isChecked()) {
+                                        if (otherCheckBox.isChecked()) {
+                                            toggledCheckBoxMsg.hide();
+                                            otherCheckBoxMsg.hide();
+                                            weekendOptOutMsg.hide();
+                                        } else {
+                                            toggledCheckBoxMsg.hide();
+                                            weekendOptOutMsg.hide();
+                                            otherCheckBoxMsg.show();
+                                        }
+                                    } else {
+                                        if (otherCheckBox.isChecked()) {
+                                            otherCheckBoxMsg.hide();
+                                            weekendOptOutMsg.hide();
+                                            toggledCheckBoxMsg.show();
+                                        } else {
+                                            toggledCheckBoxMsg.hide();
+                                            otherCheckBoxMsg.hide();
+                                            weekendOptOutMsg.show();
+                                        }
+                                    }
+                                }
+                            
+                                function handleSatCheckboxToggleEvent() {
+                                    handleCheckboxToggleEvent(checkbox('#address-ui-widgets-addr-details-sat'), satOptOutAlertMsg, checkbox('#address-ui-widgets-addr-details-sun'), sunOptOutAlertMsg, weekendOptOutAlertMsg);
+                                }
+                            
+                                function handleSunCheckboxToggleEvent() {
+                                    handleCheckboxToggleEvent(checkbox('#address-ui-widgets-addr-details-sun'), sunOptOutAlertMsg, checkbox('#address-ui-widgets-addr-details-sat'), satOptOutAlertMsg, weekendOptOutAlertMsg);
+                                }
+                            
+                                function isNull(element) {
+                                    if (typeof element === undefined || element === null) {
+                                        return true;
+                                    }
+                                }
+                            
+                                function updateHiddenInput() {
+                                    var isSaturdayChecked = checkbox('#address-ui-widgets-addr-details-sat').isChecked();
+                                    var isSundayChecked = checkbox('#address-ui-widgets-addr-details-sun').isChecked();
+                                    var weekendAvailabilityInput = "NONE";
+                                    if (isSaturdayChecked) {
+                                        weekendAvailabilityInput = "SAT";
+                                    }
+                                    if (isSundayChecked) {
+                                        weekendAvailabilityInput = "SUN";
+                                    }
+                                    if (isSaturdayChecked && isSundayChecked) {
+                                        weekendAvailabilityInput = "BOTH";
+                                    }
+                                    $("input[name='address-ui-widgets-addr-details-business-hours']").val(weekendAvailabilityInput);
+                                }
+                                A.declarative('address-ui-widgets-addr-details-business-hrs-checkbox-change', 'change', function (event) {
+                                    updateHiddenInput();
+                                    if (event.$target.attr('id') === 'address-ui-widgets-addr-details-sat') {
+                                        handleSatCheckboxToggleEvent();
+                                    } else {
+                                        handleSunCheckboxToggleEvent();
+                                    }
+                                });
+                            
+                                function getCurrentCheckboxSelection() {
+                                    var isSaturdayChecked = checkbox('#address-ui-widgets-addr-details-sat').isChecked();
+                                    var isSundayChecked = checkbox('#address-ui-widgets-addr-details-sun').isChecked();
+                                    if (isSaturdayChecked && isSundayChecked) {
+                                        return "-both";
+                                    }
+                                    if (isSaturdayChecked) {
+                                        return "-sat";
+                                    }
+                                    if (isSundayChecked) {
+                                        return "-sun";
+                                    }
+                                    return "-none";
+                                }
+                                A.on('a:expander:address-ui-widgets-addr-details-business-hours-expander:toggle:collapse', function () {
+                                    A.state.parse();
+                                    var expanderHeadingStrings = A.state('address-details-business-hours-expander-heading-strings');
+                                    var expanderHeadingString = expanderHeadingStrings['business-hours-expander-heading-text' + getCurrentCheckboxSelection()];
+                                    $('#address-ui-widgets-addr-details-business-hours-expander-heading-text').text(expanderHeadingString);
+                                });
+                                A.on('a:expander:address-ui-widgets-addr-details-business-hours-expander:toggle:expand', function () {
+                                    if ($("input[name='address-ui-widgets-addr-details-business-hours']").val() === "OTH") {
+                                        updateHiddenInput();
+                                    }
+                                });
+                            }); 
+                            </script>
+                        </span> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
